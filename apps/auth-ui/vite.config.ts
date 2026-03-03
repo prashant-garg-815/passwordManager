@@ -12,13 +12,14 @@ export default defineConfig({
       exposes: {
         './AuthApp': './src/App.tsx',
       },
-      shared: ['react', 'react-dom']
+      shared: ['react', 'react-dom', 'react-router-dom']
     })
   ],
   build: {
     modulePreload: false,
     target: 'esnext',
     minify: false,
-    cssCodeSplit: false
+    cssCodeSplit: false,
+    assetsInlineLimit: 700000 // Added to allow embedding images in the bundle
   }
 })

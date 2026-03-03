@@ -1,0 +1,13 @@
+[build]
+  command = "pnpm run build"
+  publish = "apps/shell/dist" # Adjust if you want to deploy a different microapp per site
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "9.15.9"
+
+# Redirect requests that don't match static files to index.html for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

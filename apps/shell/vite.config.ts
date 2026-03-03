@@ -11,7 +11,7 @@ export default defineConfig({
       remotes: {
         auth_ui: 'http://localhost:3001/assets/remoteEntry.js',
       },
-      shared: ['react', 'react-dom']
+      shared: ['react', 'react-dom', 'react-router-dom']
     })
   ],
   build: {
