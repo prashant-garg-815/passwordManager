@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3001",
+    "dev": "vite build --watch & vite preview --port 3001 --strictPort",
+    "dev:standalone": "vite --port 3002",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -14,6 +15,7 @@
     "messaging": "workspace:^",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.1",
     "session-manager": "workspace:^",
     "ui-components": "workspace:^"
   },

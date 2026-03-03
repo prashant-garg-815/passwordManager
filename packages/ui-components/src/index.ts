@@ -1,4 +1,6 @@
 export * from './ThemeProvider';
+export * from './StyledElements';
+export * from './Images';
 
 // Re-export MUI components to act as a single source of truth for microapps
 export {
