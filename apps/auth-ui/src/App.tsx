@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Signup />} />
         <Route path="/login" element={<div>Login Page coming soon</div>} />
-        {/* <Route path="*" element={<Navigate to="/signup" replace />} /> */}
+        {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
       </Routes>
     </Box>
   )
